@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div id="tidePredictions">
+      <div id="tableControls">
+        Start Date:
+        <select type="text" id="startYear"></select>
+        <select type="text" id="startMonth"></select>
+        <select type="text" id="startDay"></select>
+        <button id="getTideTable">GET TIDE TABLE</button>
+      </div>
+      <div class="loaderContainer">
+        <div class="loader" />
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="script.js"></script>
+  <script src="noaaTidePredictionsGraph.js"></script>
+  <script src="tableControls.js"></script>
+  <script src="apiCalls.js"></script>
+</html>

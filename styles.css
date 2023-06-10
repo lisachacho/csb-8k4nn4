@@ -1,0 +1,141 @@
+#tidePredictions {
+  text-align: var(--awb-content-alignment, left);
+  font-size: var(--awb-font-size, 16px);
+  line-height: var(--awb-line-height, 27.52px);
+  letter-spacing: var(--awb-letter-spacing, 0.24px);
+  text-transform: var(--awb-text-transform, none);
+  color: var(--awb-text-color, rgb(20, 22, 23));
+  font-family: var(--awb-text-font-family, Inter, Arial, Helvetica, sans-serif);
+  font-weight: var(--awb-text-font-weight, 400);
+  font-style: var(--awb-text-font-style, normal);
+  border-collapse: collapse;
+  border-radius: 6px;
+  border: 1px solid lightgrey;
+  background-color: var(--awb-color3, rgb(242, 243, 245));
+}
+
+#tidePredictions table {
+  width: 100%;
+  height: auto;
+}
+
+#tidePredictions .error {
+  display: block;
+  padding: 0.01em 16px;
+}
+
+#tidePredictions td,
+#tidePredictions th {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+#tidePredictions tr:nth-child(even) {
+  background-color: white;
+}
+
+#tidePredictions tr:hover {
+  background-color: beige;
+}
+
+#tidePredictions .best {
+  background-color: rgba(0, 128, 0, 0.5) !important;
+}
+
+#tidePredictions .secondBest {
+  background-color: rgba(144, 238, 144, 0.5) !important;
+}
+
+#tidePredictions #tableControls {
+  padding: 6px;
+  padding-left: 10px;
+}
+
+#tidePredictions #tableControls select {
+  padding: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#tidePredictions #tableControls button {
+  padding-top: var(--button_padding-top, 13px);
+  padding-right: var(--button_padding-right, 29px);
+  padding-bottom: var(--button_padding-bottom, 13px);
+  padding-left: var(--button_padding-left, 29px);
+  line-height: var(--button_line_height, 1);
+  font-size: var(--button_font_size, 14px);
+  background-color: var(--button_gradient_top_color, rgb(25, 143, 217));
+  color: var(--button_accent_color, rgb(255, 255, 255));
+  border-color: var(--button_border_color, rgb(255, 255, 255));
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-width: var(--button_border_width-top, 0)
+    var(--button_border_width-right, 0) var(--button_border_width-bottom, 0)
+    var(--button_border_width-left, 0);
+  margin: var(--button_margin-top) var(--button_margin-right)
+    var(--button_margin-bottom) var(--button_margin-left);
+  font-family: var(
+    --button_typography-font-family,
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif
+  );
+  font-weight: var(--button_typography-font-weight, 550);
+  font-style: var(--button_typography-font-style, normal);
+  letter-spacing: var(--button_typography-letter-spacing, 0.24px);
+  border-style: solid;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+#tidePredictions #tableControls button:active,
+#tidePredictions #tableControls button:hover,
+#tidePredictions #tableControls button:focus {
+  background-color: var(--button_gradient_top_color_hover, rgb(25, 111, 164));
+  color: var(
+    --button_accent_hover_color,
+    var(--button_accent_color, rgb(255, 255, 255))
+  );
+  border-color: var(--button_border_hover_color, rgb(255, 255, 255));
+}
+
+#tidePredictions .loaderContainer {
+  margin: 30px;
+  display: block;
+}
+
+#tidePredictions .loader {
+  border: 16px solid var(--awb-color3, rgb(242, 243, 245));
+  border-radius: 50%;
+  border-top: 16px solid var(--button_gradient_top_color, rgb(25, 143, 217));
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
